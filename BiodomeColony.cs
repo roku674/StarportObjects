@@ -9,12 +9,12 @@ namespace StarportObjects
         public uint allocationMilitary { get; set; }
         public uint allocationResearch { get; set; }
         public string currentlyConstructing { get; set; }
-        public uint currentPollution { get; internal set; }
+        public uint currentPollution { get; set; }
         public string dateFounded { get; set; }
-        public uint disasters { get; internal set; }
+        public uint disasters { get; set; }
         public string discoveries { get; set; }
         public string government { get; set; }
-        public uint hourlyIncome { get; internal set; }
+        public uint hourlyIncome { get; set; }
         public int morale { get; set; }
         public string pollutionRate { get; set; }
         public uint population { get; set; }
