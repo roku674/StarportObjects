@@ -4,9 +4,21 @@ namespace StarportObjects
 {
     public class Colony
     {
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public Colony()
         { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="biodome"></param>
+        /// <param name="planetName"></param>
+        /// <param name="colonyName"></param>
+        /// <param name="solar"></param>
+        /// <param name="refinery"></param>
+        /// <param name="weaponsFactory"></param>
         public Colony(BiodomeInside biodome, string planetName, string colonyName, Solar solar, Refinery refinery, WeaponsFactory weaponsFactory)
         {
             this.biodome = biodome;

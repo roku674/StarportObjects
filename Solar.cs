@@ -4,9 +4,17 @@ namespace StarportObjects
 {
     public class Solar : Building
     {
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Solar()
         { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="solarRate"></param>
+        /// <param name="solarShots"></param>
         public Solar(uint solarRate, uint solarShots)
         {
             this.solarRate = solarRate;

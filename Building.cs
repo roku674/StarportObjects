@@ -4,9 +4,18 @@ namespace StarportObjects
 {
     public class Building
     {
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public Building()
         { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="isBuilt"></param>
+        /// <param name="name"></param>
+        /// <param name="requiredResources"></param>
         public Building(bool isBuilt, string name, Resources requiredResources)
         {
             this.isBuilt = isBuilt;

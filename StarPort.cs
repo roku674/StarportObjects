@@ -4,9 +4,19 @@ namespace StarportObjects
 {
     public class StarPort
     {
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public StarPort()
         { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="colonists"></param>
+        /// <param name="resources"></param>
+        /// <param name="shields"></param>
+        /// <param name="negotiators"></param>
         public StarPort(uint colonists, Resources resources, uint shields, uint negotiators)
         {
             this.colonists = colonists;

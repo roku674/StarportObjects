@@ -9,9 +9,19 @@ namespace StarportObjects
         public static readonly uint defensesMax = 60;
         public string name;
 
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public StarSystem()
         { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="currentDefenses"></param>
+        /// <param name="planets"></param>
+        /// <param name="port"></param>
         public StarSystem(string name, uint currentDefenses, List<Planet> planets, StarPort port)
         {
             this.name = name;

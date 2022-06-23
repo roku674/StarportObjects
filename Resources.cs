@@ -4,6 +4,17 @@ namespace StarportObjects
 {
     public class Resources
     {
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="metal"></param>
+        /// <param name="anerobes"></param>
+        /// <param name="medicine"></param>
+        /// <param name="organics"></param>
+        /// <param name="oil"></param>
+        /// <param name="uranium"></param>
+        /// <param name="equipment"></param>
+        /// <param name="spice"></param>
         public Resources(uint metal, uint anerobes, uint medicine, uint organics, uint oil, uint uranium, uint equipment, uint spice)
         {
             this.metal = metal;
@@ -15,6 +26,12 @@ namespace StarportObjects
             this.equipment = equipment;
             this.spice = spice;
         }
+
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
+        public Resources()
+        { }
 
         public uint anaerobes { get; set; }
         public uint equipment { get; set; }
