@@ -4,7 +4,7 @@ namespace StarportObjects
 {
     public class Resources
     {
-        public uint anerobes { get; set; }
+        public uint anaerobes { get; set; }
         public uint equipment { get; set; }
         public uint medicine { get; set; }
         public uint metal { get; set; }
@@ -16,7 +16,7 @@ namespace StarportObjects
         public Resources(uint metal, uint anerobes, uint medicine, uint organics, uint oil, uint uranium, uint equipment, uint spice)
         {
             this.metal = metal;
-            this.anerobes = anerobes;
+            this.anaerobes = anerobes;
             this.medicine = medicine;
             this.organics = organics;
             this.oil = oil;
