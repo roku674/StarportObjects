@@ -4,15 +4,6 @@ namespace StarportObjects
 {
     public class Resources
     {
-        public uint anaerobes { get; set; }
-        public uint equipment { get; set; }
-        public uint medicine { get; set; }
-        public uint metal { get; set; }
-        public uint oil { get; set; }
-        public uint organics { get; set; }
-        public uint spice { get; set; }
-        public uint uranium { get; set; }
-
         public Resources(uint metal, uint anerobes, uint medicine, uint organics, uint oil, uint uranium, uint equipment, uint spice)
         {
             this.metal = metal;
@@ -24,5 +15,14 @@ namespace StarportObjects
             this.equipment = equipment;
             this.spice = spice;
         }
+
+        public uint anaerobes { get; set; }
+        public uint equipment { get; set; }
+        public uint medicine { get; set; }
+        public uint metal { get; set; }
+        public uint oil { get; set; }
+        public uint organics { get; set; }
+        public uint spice { get; set; }
+        public uint uranium { get; set; }
     }
 }

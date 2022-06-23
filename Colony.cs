@@ -4,7 +4,20 @@ namespace StarportObjects
 {
     public class Colony
     {
-        public BiodomeColony biodome { get; set; }
+        public Colony()
+        { }
+
+        public Colony(BiodomeInside biodome, string planetName, string colonyName, Solar solar, Refinery refinery, WeaponsFactory weaponsFactory)
+        {
+            this.biodome = biodome;
+            this.planetName = planetName;
+            this.colonyName = colonyName;
+            this.solar = solar;
+            this.refinery = refinery;
+            this.weaponsFactory = weaponsFactory;
+        }
+
+        public BiodomeInside biodome { get; set; }
         public string planetName { get; set; }
         public string colonyName { get; set; }
         public Solar solar { get; set; }
