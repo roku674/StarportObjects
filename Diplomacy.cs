@@ -1,6 +1,6 @@
 //Created by Alexander Fields https://github.com/roku674
 
-namespace StarportDiplomacy
+namespace StarportObjects
 {
     public static class Diplomacy
     {
