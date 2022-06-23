@@ -2,7 +2,7 @@
 
 namespace StarportDiplomacy
 {
-    public class Diplomacy
+    public static class Diplomacy
     {
         private static readonly string[] _allies =
         {
