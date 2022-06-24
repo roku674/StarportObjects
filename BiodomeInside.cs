@@ -5,6 +5,12 @@ namespace StarportObjects
     public class BiodomeInside
     {
         /// <summary>
+        /// Default constructor
+        /// </summary>
+        public BiodomeInside()
+        { }
+
+        /// <summary>
         /// Constructor
         /// </summary>
         /// <param name="allocationConstruction"></param>
@@ -23,7 +29,8 @@ namespace StarportObjects
         /// <param name="pollutionRate"></param>
         /// <param name="population"></param>
         /// <param name="treasury"></param>
-        public BiodomeInside(uint allocationConstruction, uint allocationHarvesting, uint allocationMilitary, uint allocationResearch, string currentlyConstructing, uint currentPollution, string dateFounded, uint disasters, string discoveries, string government, uint hourlyIncome, int morale, string owner, string pollutionRate, uint population, uint treasury)
+        /// <param name="moraleWord"></param>
+        public BiodomeInside(uint allocationConstruction, uint allocationHarvesting, uint allocationMilitary, uint allocationResearch, string currentlyConstructing, uint currentPollution, string dateFounded, uint disasters, string discoveries, string government, uint hourlyIncome, int morale, string owner, string pollutionRate, uint population, uint treasury, string moraleWord)
         {
             this.allocationConstruction = allocationConstruction;
             this.allocationHarvesting = allocationHarvesting;
@@ -41,13 +48,8 @@ namespace StarportObjects
             this.pollutionRate = pollutionRate;
             this.population = population;
             this.treasury = treasury;
+            this.moraleWord = moraleWord;
         }
-
-        /// <summary>
-        /// Default Constructor
-        /// </summary>
-        public BiodomeInside()
-        { }
 
         public uint allocationConstruction { get; set; }
         public uint allocationHarvesting { get; set; }
@@ -65,5 +67,6 @@ namespace StarportObjects
         public string pollutionRate { get; set; }
         public uint population { get; set; }
         public uint treasury { get; set; }
+        public string moraleWord { get; internal set; }
     }
 }
