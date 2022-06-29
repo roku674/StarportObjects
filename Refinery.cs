@@ -4,9 +4,17 @@ namespace StarportObjects
 {
     public class Refinery : Building
     {
+        /// <summary>
+        /// Default Constructor
+        /// </summary>
         public Refinery()
         { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="workforceAllocation"></param>
+        /// <param name="resourcesInRefinery"></param>
         public Refinery(Resources workforceAllocation, Resources resourcesInRefinery)
         {
             this.workforceAllocation = workforceAllocation;

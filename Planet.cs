@@ -6,9 +6,23 @@ namespace StarportObjects
     {
         public static readonly uint defensesMax = 150;
 
+        /// <summary>
+        /// Default constructor
+        /// </summary>
         public Planet()
         { }
 
+        /// <summary>
+        /// Constructor
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="owner"></param>
+        /// <param name="population"></param>
+        /// <param name="morale"></param>
+        /// <param name="currentDefenses"></param>
+        /// <param name="colony"></param>
+        /// <param name="isColonized"></param>
+        /// <param name="isDoubleDome"></param>
         public Planet(string name, string owner, string population, string morale, uint currentDefenses, Colony colony, bool isColonized, bool isDoubleDome)
         {
             this.name = name;
