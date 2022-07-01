@@ -15,7 +15,7 @@ namespace StarportObjects
                 {
             "Altair","Awmalzo","Booga.Booga", "B-radk.","Dad","Darkside", "Demon",
             "Deegs", "Flint","Juneteenth", "Meshuggah","McGee","Pluto","Presto",
-            "Revelation","Ron","RONXINA","Scar-Face"
+            "Revelation"," Ron ","RONXINA","Scar-Face"
         };
 
         private static readonly string[] _nap = { };
