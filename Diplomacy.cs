@@ -8,7 +8,7 @@ namespace StarportObjects
         {
         "Allie","Anxiety.jar","BananaDei","Bitcoin","Bodhi","CaptArcher","ComputerSheep",
         "Depression.Wav","Devila","Fayil","Hokujinn","Jumjumbub1410",
-        "Leaderkiller","Legion","MRniceguy","Pebo","Probation","Rancia","Taterchip","Towlie","WW3"
+        "Leaderkiller","Legion","Muzza269u","MRniceguy","Pebo","Probation","Rancia","Taterchip","Towlie","WW3"
         };
 
         private static readonly string[] _enemies =
