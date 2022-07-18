@@ -6,7 +6,7 @@ namespace StarportObjects
     {
         private static readonly string[] _allies =
         {
-        "Allie","Anxiety.jar","BananaDei","Bitcoin","Bodhi","CaptArcher","ComputerSheep",
+        "Adapt","Allie","Anxiety.jar","BananaDei","Bitcoin","Bodhi","CaptArcher","Cockhead","ComputerSheep",
         "Depression.Wav","Devila","Fayil","Hokujinn","Jumjumbub1410",
         "Leaderkiller","Legion","Muzza269u","MRniceguy","Pebo","Probation","Rancia","Taterchip","Towlie","WW3"
         };
