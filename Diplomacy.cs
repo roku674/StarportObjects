@@ -6,15 +6,15 @@ namespace StarportObjects
     {
         private static readonly string[] _allies =
         {
-        "Adapt","Allie","Anxiety.jar","BananaDei","Bitcoin","Bodhi","CaptArcher","Cockhead","ComputerSheep",
+        "Allie","Anxiety.jar","BananaDei","Bitcoin","Bodhi","CaptArcher","ComputerSheep",
         "Depression.Wav","Devila","Fayil","Hokujinn","Jumjumbub1410",
         "Leaderkiller","Legion","Muzza269u","MRniceguy","Pebo","Probation","Rancia","Taterchip","Towlie","WW3"
         };
 
         private static readonly string[] _enemies =
         {
-        "Altair","Awmalzo","Booga.Booga","B-radk.","Dad","Darkside","Demon","Demon.",
-        "Deegs","DrakeoTheRuler","Flint","Juneteenth","Meshuggah","McGee","Pluto","Presto",
+        "Adapt","Altair","Awmalzo","Booga.Booga","B-radk.","Dad","Darkside","Demon","Demon.",
+        "Deegs","DrakeoTheRuler","Cockhead","Flint","Juneteenth","Meshuggah","McGee","Pluto","Presto",
         "Revelation"," Ron ","RONXINA","Scar-Face"
         };
 
