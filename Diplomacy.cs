@@ -7,7 +7,7 @@ namespace StarportObjects
         private static readonly string[] _allies =
         {
         "Allie","Anxiety.jar","BananaDei","Bitcoin","Bodhi","CaptArcher","ComputerSheep",
-        "Depression.Wav","Devila","Fayil","Hokujinn","Jumjumbub1410",
+        "Depression.Wav","Devila","Hokujinn","Jumjumbub1410",
         "Leaderkiller","Muzza269u","MRniceguy","Probation","Rancia","Taterchip","Towlie","WW3"
         };
 
@@ -18,7 +18,7 @@ namespace StarportObjects
         "Revelation"," Ron ","RONXINA","Scar-Face"
         };
 
-        private static readonly string[] _nap = { "Legion", "Pebo", "Ted" };
+        private static readonly string[] _nap = { "Fayil","Legion", "Pebo", "Ted" };
 
         public static string[] allies => _allies;
         public static string[] enemies => _enemies;
