@@ -6,16 +6,16 @@ namespace StarportObjects
     {
         private static readonly string[] _allies =
         {
-        "Allie","Anxiety.jar","BananaDei","Bitcoin","Bodhi","CaptArcher","ComputerSheep",
-        "Depression.Wav","Devila","Hokujinn","Jumjumbub1410",
-        "Leaderkiller","Muzza269u","MRniceguy","Probation","Rancia","Taterchip","Towlie","WW3"
+            "Allie","Anxiety.jar","BananaDei","Bitcoin","Bodhi","CaptArcher","ComputerSheep",
+            "Depression.Wav","Devila","Hokujinn","Jumjumbub1410",
+            "Leaderkiller","Muzza269u","MRniceguy","Probation","Rancia","Taterchip","Towlie","WW3"
         };
 
         private static readonly string[] _enemies =
         {
-        "Adapt","Altair","Awmalzo","Booga.Booga","B-radk.","Dad","Darkside","Demon","Demon.",
-        "Deegs","DrakeoTheRuler","Cockhead","Flint","Juneteenth","Meshuggah","McGee","Pluto","Presto",
-        "Revelation"," Ron ","RONXINA","Scar-Face","Slaven"
+            "Adapt","Altair","Awmalzo","Booga.Booga","B-radk.","Dad","Darkside","Demon","Demon.",
+            "Deegs","DrakeoTheRuler","Cockhead","Flint","Juneteenth","Meshuggah","McGee","Pluto","Presto",
+            "Revelation"," Ron ","RON-4-GOLD","Scar-Face","Slaven"
         };
 
         private static readonly string[] _nap = { "Fayil","Legion", "Pebo", "Ted" };
