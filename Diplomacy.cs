@@ -14,7 +14,7 @@ namespace StarportObjects
         private static readonly string[] _enemies =
         {
             "Adapt","Altair","Awmalzo","Booga.Booga","B-radk.","Dad","Darkside","Demon","Demon.",
-            "Deegs","DrakeoTheRuler","Cockhead","Flint","Juneteenth","Meshuggah","McGee","Pluto","Presto",
+            "Deegs","DrakeoTheRuler","Cockhead","Flint","Juneteenth","Meshuggah","Mega.Tron","McGee","Pluto","Presto",
             "Revelation"," Ron ","RON-4-GOLD","Scar-Face","Slaven"
         };
 
