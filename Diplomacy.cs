@@ -18,7 +18,7 @@ namespace StarportObjects
             "Revelation"," Ron ","RON-4-GOLD","Scar-Face","Slaven"
         };
 
-        private static readonly string[] _nap = { "Fayil", "Pebo", "Ted" };
+        private static readonly string[] _nap = { "Fayil","Pebo","Shmandoor", "Ted" };
 
         public static string[] allies => _allies;
         public static string[] enemies => _enemies;
