@@ -14,11 +14,11 @@ namespace StarportObjects
         private static readonly string[] _enemies =
         {
             "Adapt","Altair","Awmalzo","Booga.Booga","B-radk.","Dad","Darkside","Demon","Demon.",
-            "Deegs","DrakeoTheRuler","Cockhead","Flint","Juneteenth","Meshuggah","Mega.Tron","McGee","Pluto","Presto",
+            "Deegs","DrakeoTheRuler","Cockhead","Flint","Legion","Juneteenth","Meshuggah","Mega.Tron","McGee","Pluto","Presto",
             "Revelation"," Ron ","RON-4-GOLD","Scar-Face","Slaven"
         };
 
-        private static readonly string[] _nap = { "Fayil","Legion", "Pebo", "Ted" };
+        private static readonly string[] _nap = { "Fayil", "Pebo", "Ted" };
 
         public static string[] allies => _allies;
         public static string[] enemies => _enemies;
