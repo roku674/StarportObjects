@@ -22,7 +22,7 @@ namespace StarportObjects
         /// <param name="currentDefenses"></param>
         /// <param name="planets"></param>
         /// <param name="port"></param>
-        public StarSystem(string name, uint currentDefenses, List<Planet> planets, StarPort port)
+        public StarSystem(string name, uint currentDefenses, List<Planet> planets, Starport port)
         {
             this.name = name;
             this.currentDefenses = currentDefenses;
@@ -32,6 +32,6 @@ namespace StarportObjects
 
         public uint currentDefenses { get; set; }
         public List<Planet> planets { get; set; }
-        public StarPort port { get; set; }
+        public Starport port { get; set; }
     }
 }

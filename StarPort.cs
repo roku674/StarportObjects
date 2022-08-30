@@ -2,12 +2,12 @@
 
 namespace StarportObjects
 {
-    public class StarPort
+    public class Starport
     {
         /// <summary>
         /// Default constructor
         /// </summary>
-        public StarPort()
+        public Starport()
         { }
 
         /// <summary>
@@ -17,7 +17,7 @@ namespace StarportObjects
         /// <param name="resources"></param>
         /// <param name="shields"></param>
         /// <param name="negotiators"></param>
-        public StarPort(uint colonists, Resources resources, uint shields, uint negotiators)
+        public Starport(uint colonists, Resources resources, uint shields, uint negotiators)
         {
             this.colonists = colonists;
             this.resources = resources;
