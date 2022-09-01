@@ -16,16 +16,16 @@ namespace StarportObjects
         private string _corporation;
         private DateTime _founded;
         private int _population;
-        private float _popGrowth;
-        private float _morale;
-        private float _moraleChange;
+        private double _popGrowth;
+        private double _morale;
+        private double _moraleChange;
         private string _governemnt;
         private int _credits;
-        private float _credGrowth;
+        private double _credGrowth;
         private int _pollution;
-        private float _pollutionRate;
+        private double _pollutionRate;
         private int _disaster;
-        private float _unProtect;
+        private double _unProtect;
         private int _percConstruct;
         private int _percResearch;
         private int _percMilitary;
@@ -109,8 +109,8 @@ namespace StarportObjects
         /// <param name="discoveries"></param>
         /// <param name="environment"></param>
         public Holdings(string planetType, int hopsAway, string name, string location, int galaxyX, int galaxyY, string owner,
-            string corporation, DateTime founded, int population, float popGrowth, float morale, float moraleChange, string governemnt,
-            int credits, float credGrowth, int pollution, float pollutionRate, int disaster, float unProtect, int percConstruct,
+            string corporation, DateTime founded, int population, double popGrowth, double morale, double moraleChange, string governemnt,
+            int credits, double credGrowth, int pollution, double pollutionRate, int disaster, double unProtect, int percConstruct,
             int percResearch, int percMilitary, int percHarvest, string currentlyBuilding, int buildMinutes, int ore, int ana, int med,
             int org, int oil, int ura, int equ, int spi, int nukes, int negotiators, int mines, int compoundMines, int flakCannons,
             int laserCannons, int shields, int solarShots, int solarFreq, int numDiscoveries, string discoveries, bool environment)
@@ -173,16 +173,16 @@ namespace StarportObjects
         public string corporation { get => _corporation; set => _corporation = value; }
         public DateTime founded { get => _founded; set => _founded = value; }
         public int population { get => _population; set => _population = value; }
-        public float popGrowth { get => _popGrowth; set => _popGrowth = value; }
-        public float morale { get => _morale; set => _morale = value; }
-        public float moraleChange { get => _moraleChange; set => _moraleChange = value; }
+        public double popGrowth { get => _popGrowth; set => _popGrowth = value; }
+        public double morale { get => _morale; set => _morale = value; }
+        public double moraleChange { get => _moraleChange; set => _moraleChange = value; }
         public string governemnt { get => _governemnt; set => _governemnt = value; }
         public int credits { get => _credits; set => _credits = value; }
-        public float credGrowth { get => _credGrowth; set => _credGrowth = value; }
+        public double credGrowth { get => _credGrowth; set => _credGrowth = value; }
         public int pollution { get => _pollution; set => _pollution = value; }
-        public float pollutionRate { get => _pollutionRate; set => _pollutionRate = value; }
+        public double pollutionRate { get => _pollutionRate; set => _pollutionRate = value; }
         public int disaster { get => _disaster; set => _disaster = value; }
-        public float unProtect { get => _unProtect; set => _unProtect = value; }
+        public double unProtect { get => _unProtect; set => _unProtect = value; }
         public int percConstruct { get => _percConstruct; set => _percConstruct = value; }
         public int percResearch { get => _percResearch; set => _percResearch = value; }
         public int percMilitary { get => _percMilitary; set => _percMilitary = value; }
