@@ -4,7 +4,7 @@ using System;
 
 namespace StarportObjects
 {
-    public class Holdings
+    public class Holding
     {
         private string _planetType;
         private int _hopsAway;
@@ -56,7 +56,7 @@ namespace StarportObjects
         /// <summary>
         /// Default constructor
         /// </summary>
-        public Holdings(string v, int v1)
+        public Holding(string v, int v1)
         { }
 
         /// <summary>
@@ -108,7 +108,7 @@ namespace StarportObjects
         /// <param name="numDiscoveries"></param>
         /// <param name="discoveries"></param>
         /// <param name="environment"></param>
-        public Holdings(string planetType, int hopsAway, string name, string location, int galaxyX, int galaxyY, string owner,
+        public Holding(string planetType, int hopsAway, string name, string location, int galaxyX, int galaxyY, string owner,
             string corporation, DateTime founded, int population, double popGrowth, double morale, double moraleChange, string governemnt,
             int credits, double credGrowth, int pollution, double pollutionRate, int disaster, double unProtect, int percConstruct,
             int percResearch, int percMilitary, int percHarvest, string currentlyBuilding, int buildMinutes, int ore, int ana, int med,
