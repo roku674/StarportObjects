@@ -4,6 +4,9 @@ using System;
 
 namespace StarportObjects
 {
+    /// <summary>
+    /// Based on Toonces' Holdings CSV
+    /// </summary>
     public class Holding
     {
         private string _planetType;
