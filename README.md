@@ -1,2 +1,2 @@
 # StarportObjects
-Objects in C# for game objects seen in C#
+Objects in C# for game objects seen in Starport Galactic Empires
