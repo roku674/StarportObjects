@@ -59,7 +59,7 @@ namespace StarportObjects
         /// <summary>
         /// Default constructor
         /// </summary>
-        public Holding(string v, int v1)
+        public Holding()
         { }
 
         /// <summary>
