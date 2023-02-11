@@ -1,5 +1,6 @@
 ﻿//Created by Alexander Fields https://github.com/roku674
 
+using StarportObjects.Structs;
 using System.Collections.Generic;
 
 namespace StarportObjects
@@ -14,7 +15,8 @@ namespace StarportObjects
         /// Default Constructor
         /// </summary>
         public StarSystem()
-        { }
+        {
+        }
 
         /// <summary>
         /// Constructor
@@ -23,18 +25,28 @@ namespace StarportObjects
         /// <param name="currentDefenses"></param>
         /// <param name="planets"></param>
         /// <param name="port"></param>
-        public StarSystem(string name, uint currentDefenses, List<Planet> planets, Starport port, List<StarSystem> connectedSystems)
+        public StarSystem(string name, uint currentDefenses, List<Planet> planets, Starport port, List<string> connectedSystems,string starType, string starColor, File picture, File map, Coordinate coordinates)
         {
             this.name = name;
             this.currentDefenses = currentDefenses;
             this.planets = planets;
             this.port = port;
             this.connectedSystems = connectedSystems;
+            this.starType = starType;
+            this.starColor = starColor;
+            this.picture = picture;
+            this.MiniMap = MiniMap;
+            this.coordinates = coordinates;
         }
 
-        public List<StarSystem> connectedSystems { get; set; }
+        public List<string> connectedSystems { get; set; }
         public uint currentDefenses { get; set; }
         public List<Planet> planets { get; set; }
         public Starport port { get; set; }
+        public string starType { get; set; }
+        public string starColor { get; set; }
+        public File picture { get; set; }
+        public File MiniMap { get; set; }
+        public Coordinate coordinates { get; set; }
     }
 }

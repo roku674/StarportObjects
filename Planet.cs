@@ -4,7 +4,7 @@ namespace StarportObjects
 {
     public class Planet
     {
-        public static readonly uint defensesMax = 150;
+        public static readonly uint defensesMax = 125;
 
         /// <summary>
         /// Default constructor
@@ -20,22 +20,24 @@ namespace StarportObjects
         /// <param name="population"></param>
         /// <param name="morale"></param>
         /// <param name="currentDefenses"></param>
-        /// <param name="colony"></param>
+        /// <param name="holding"></param>
         /// <param name="isColonized"></param>
         /// <param name="isDoubleDome"></param>
-        public Planet(string name, string owner, string population, string morale, uint currentDefenses, Colony colony, bool isColonized, bool isDoubleDome)
+        public Planet(string name, string owner, string population, string morale, uint currentDefenses, Holding holding, bool isColonized, bool isDoubleDome,File picture, File map)
         {
             this.name = name;
             this.owner = owner;
             this.population = population;
             this.morale = morale;
             this.currentDefenses = currentDefenses;
-            this.colony = colony;
+            this.holding = holding;
             this.isColonized = isColonized;
             this.isDoubleDome = isDoubleDome;
+            this.picture = picture;
+            this.map = map;
         }
 
-        public Colony colony { get; set; }
+        public Holding holding { get; set; }
         public uint currentDefenses { get; set; }
         public bool isColonized { get; set; }
         public bool isDoubleDome { get; set; }
@@ -43,5 +45,7 @@ namespace StarportObjects
         public string name { get; set; }
         public string owner { get; set; }
         public string population { get; set; }
+        public File picture { get; set; }
+        public File map { get; set; }
     }
 }

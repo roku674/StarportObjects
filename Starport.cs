@@ -10,23 +10,18 @@ namespace StarportObjects
         public Starport()
         { }
 
-        /// <summary>
-        /// Constructor
-        /// </summary>
-        /// <param name="colonists"></param>
-        /// <param name="resources"></param>
-        /// <param name="shields"></param>
-        /// <param name="negotiators"></param>
-        public Starport(uint colonists, Resources resources, uint shields, uint negotiators)
+        public Starport(uint colonists, Resources selling, Resources buying, uint shields, uint negotiators)
         {
             this.colonists = colonists;
-            this.resources = resources;
+            this.selling = selling;
+            this.buying = buying;
             this.shields = shields;
             this.negotiators = negotiators;
         }
 
         public uint colonists { get; set; }
-        public Resources resources { get; set; }
+        public Resources selling { get; set; }
+        public Resources buying { get; set;}
         public uint shields { get; set; }
         public uint negotiators { get; set; }
     }
