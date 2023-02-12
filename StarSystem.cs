@@ -25,7 +25,7 @@ namespace StarportObjects
         /// <param name="currentDefenses"></param>
         /// <param name="planets"></param>
         /// <param name="port"></param>
-        public StarSystem(string name, uint currentDefenses, List<Planet> planets, Starport port, List<string> connectedSystems,string starType, string starColor, File picture, File map, Coordinate coordinates)
+        public StarSystem(string name, uint currentDefenses, List<Planet> planets, Starport port, List<string> connectedSystems,string starType, string starColor, FileObj picture, FileObj map, Coordinate coordinates)
         {
             this.name = name;
             this.currentDefenses = currentDefenses;
@@ -45,8 +45,8 @@ namespace StarportObjects
         public Starport port { get; set; }
         public string starType { get; set; }
         public string starColor { get; set; }
-        public File picture { get; set; }
-        public File MiniMap { get; set; }
+        public FileObj picture { get; set; }
+        public FileObj MiniMap { get; set; }
         public Coordinate coordinates { get; set; }
     }
 }

@@ -23,7 +23,7 @@ namespace StarportObjects
         /// <param name="holding"></param>
         /// <param name="isColonized"></param>
         /// <param name="isDoubleDome"></param>
-        public Planet(string name, string owner, string population, string morale, uint currentDefenses, Holding holding, bool isColonized, bool isDoubleDome,File picture, File map)
+        public Planet(string name, string owner, string population, string morale, uint currentDefenses, Holding holding, bool isColonized, bool isDoubleDome,FileObj picture, FileObj map)
         {
             this.name = name;
             this.owner = owner;
@@ -45,7 +45,7 @@ namespace StarportObjects
         public string name { get; set; }
         public string owner { get; set; }
         public string population { get; set; }
-        public File picture { get; set; }
-        public File map { get; set; }
+        public FileObj picture { get; set; }
+        public FileObj map { get; set; }
     }
 }

@@ -3,9 +3,9 @@ using System.IO;
 
 namespace StarportObjects
 {
-    public class File
+    public class FileObj
     {
-        public File()
+        public FileObj()
         {
         }
 
@@ -19,7 +19,7 @@ namespace StarportObjects
         /// <param name="createdDate"></param>
         /// <param name="lastUpdated"></param>
         /// <param name="fileSize">file size is in bytes just in case you're wondering</param>
-        public File(string fileName, string fileExtension, string fileContents, byte[] fileBytes, System.DateTime createdDate, System.DateTime lastUpdated, ulong fileSize, string folderStructure, DirectoryInfo directory)
+        public FileObj(string fileName, string fileExtension, string fileContents, byte[] fileBytes, System.DateTime createdDate, System.DateTime lastUpdated, ulong fileSize, string folderStructure, DirectoryInfo directory)
         {
             this.fileName = fileName;
             this.fileExtension = fileExtension;
