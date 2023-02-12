@@ -1,4 +1,6 @@
 ﻿
+using System.IO;
+
 namespace StarportObjects
 {
     public class File
@@ -17,7 +19,7 @@ namespace StarportObjects
         /// <param name="createdDate"></param>
         /// <param name="lastUpdated"></param>
         /// <param name="fileSize">file size is in bytes just in case you're wondering</param>
-        public File(string fileName, string fileExtension, string fileContents, byte[] fileBytes, System.DateTime createdDate, System.DateTime lastUpdated, ulong fileSize)
+        public File(string fileName, string fileExtension, string fileContents, byte[] fileBytes, System.DateTime createdDate, System.DateTime lastUpdated, ulong fileSize, string folderStructure, DirectoryInfo directory)
         {
             this.fileName = fileName;
             this.fileExtension = fileExtension;
@@ -26,6 +28,8 @@ namespace StarportObjects
             this.createdDate = createdDate;
             this.lastUpdated = lastUpdated;
             this.fileSize = fileSize;
+            this.folderStructure = folderStructure;
+            this.directory = directory;
         }
 
         string fileName { get; set; }
@@ -38,6 +42,8 @@ namespace StarportObjects
         /// File size is in bytes just in casee you're wondering
         /// </summary>
         ulong fileSize { get; set; }
+        string folderStructure { get; set; }
+        DirectoryInfo directory { get; set; }
 
     }
 }
