@@ -1,6 +1,4 @@
-﻿//Created by Alexander Fields https://github.com/roku674
-
-namespace StarportObjects
+﻿namespace StarportObjects
 {
     public class BiodomeInside
     {
@@ -8,7 +6,8 @@ namespace StarportObjects
         /// Default constructor
         /// </summary>
         public BiodomeInside()
-        { }
+        {
+        }
 
         /// <summary>
         /// Constructor
@@ -32,41 +31,75 @@ namespace StarportObjects
         /// <param name="moraleWord"></param>
         public BiodomeInside(uint allocationConstruction, uint allocationHarvesting, uint allocationMilitary, uint allocationResearch, string currentlyConstructing, uint currentPollution, string dateFounded, uint disasters, string discoveries, string government, uint hourlyIncome, int morale, string owner, string pollutionRate, uint population, uint treasury, string moraleWord)
         {
-            this.allocationConstruction = allocationConstruction;
-            this.allocationHarvesting = allocationHarvesting;
-            this.allocationMilitary = allocationMilitary;
-            this.allocationResearch = allocationResearch;
-            this.currentlyConstructing = currentlyConstructing;
-            this.currentPollution = currentPollution;
-            this.dateFounded = dateFounded;
-            this.disasters = disasters;
-            this.discoveries = discoveries;
-            this.government = government;
-            this.hourlyIncome = hourlyIncome;
-            this.morale = morale;
-            this.owner = owner;
-            this.pollutionRate = pollutionRate;
-            this.population = population;
-            this.treasury = treasury;
-            this.moraleWord = moraleWord;
+            AllocationConstruction = allocationConstruction;
+            AllocationHarvesting = allocationHarvesting;
+            AllocationMilitary = allocationMilitary;
+            AllocationResearch = allocationResearch;
+            CurrentlyConstructing = currentlyConstructing;
+            CurrentPollution = currentPollution;
+            DateFounded = dateFounded;
+            Disasters = disasters;
+            Discoveries = discoveries;
+            Government = government;
+            HourlyIncome = hourlyIncome;
+            Morale = morale;
+            Owner = owner;
+            PollutionRate = pollutionRate;
+            Population = population;
+            Treasury = treasury;
+            MoraleWord = moraleWord;
         }
 
-        public uint allocationConstruction { get; set; }
-        public uint allocationHarvesting { get; set; }
-        public uint allocationMilitary { get; set; }
-        public uint allocationResearch { get; set; }
-        public string currentlyConstructing { get; set; }
-        public uint currentPollution { get; set; }
-        public string dateFounded { get; set; }
-        public uint disasters { get; set; }
-        public string discoveries { get; set; }
-        public string government { get; set; }
-        public uint hourlyIncome { get; set; }
-        public int morale { get; set; }
-        public string owner { get; set; }
-        public string pollutionRate { get; set; }
-        public uint population { get; set; }
-        public uint treasury { get; set; }
-        public string moraleWord { get; internal set; }
+        public uint AllocationConstruction {
+            get; set;
+        }
+        public uint AllocationHarvesting {
+            get; set;
+        }
+        public uint AllocationMilitary {
+            get; set;
+        }
+        public uint AllocationResearch {
+            get; set;
+        }
+        public string CurrentlyConstructing {
+            get; set;
+        }
+        public uint CurrentPollution {
+            get; set;
+        }
+        public string DateFounded {
+            get; set;
+        }
+        public uint Disasters {
+            get; set;
+        }
+        public string Discoveries {
+            get; set;
+        }
+        public string Government {
+            get; set;
+        }
+        public uint HourlyIncome {
+            get; set;
+        }
+        public int Morale {
+            get; set;
+        }
+        public string Owner {
+            get; set;
+        }
+        public string PollutionRate {
+            get; set;
+        }
+        public uint Population {
+            get; set;
+        }
+        public uint Treasury {
+            get; set;
+        }
+        public string MoraleWord {
+            get; internal set;
+        }
     }
 }

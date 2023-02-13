@@ -9,29 +9,51 @@ namespace StarportObjects
         /// </summary>
         public Colony(BiodomeInside biodome = null, string planetType = null, string planetName = null, string colonyName = null, Solar solar = null, Refinery refinery = null, WeaponsFactory weaponsFactory = null, string coordinates = null, string founded = null, string corporation = null, string owner = null)
         {
-            this.biodome = biodome;
-            this.planetType = planetType;
-            this.planetName = planetName;
-            this.colonyName = colonyName;
-            this.solar = solar;
-            this.refinery = refinery;
-            this.weaponsFactory = weaponsFactory;
-            this.coordinates = coordinates;
-            this.founded = founded;
-            this.corporation = corporation;
-            this.owner = owner;
+            this.Biodome = biodome;
+            this.PlanetType = planetType;
+            this.PlanetName = planetName;
+            this.ColonyName = colonyName;
+            this.Solar = solar;
+            this.Refinery = refinery;
+            this.WeaponsFactory = weaponsFactory;
+            this.Coordinates = coordinates;
+            this.Founded = founded;
+            this.Corporation = corporation;
+            this.Owner = owner;
         }
 
-        public BiodomeInside biodome { get; set; }
-        public string planetType { get; set; }
-        public string planetName { get; set; }
-        public string colonyName { get; set; }
-        public Solar solar { get; set; }
-        public Refinery refinery { get; set; }
-        public WeaponsFactory weaponsFactory { get; set; }
-        public string coordinates { get; internal set; }
-        public string founded { get; internal set; }
-        public string corporation { get; internal set; }
-        public string owner { get; internal set; }
+        public BiodomeInside Biodome {
+            get; set;
+        }
+        public string PlanetType {
+            get; set;
+        }
+        public string PlanetName {
+            get; set;
+        }
+        public string ColonyName {
+            get; set;
+        }
+        public Solar Solar {
+            get; set;
+        }
+        public Refinery Refinery {
+            get; set;
+        }
+        public WeaponsFactory WeaponsFactory {
+            get; set;
+        }
+        public string Coordinates {
+            get; internal set;
+        }
+        public string Founded {
+            get; internal set;
+        }
+        public string Corporation {
+            get; internal set;
+        }
+        public string Owner {
+            get; internal set;
+        }
     }
 }

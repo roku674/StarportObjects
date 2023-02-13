@@ -1,52 +1,73 @@
-﻿//Created by Alexander Fields https://github.com/roku674
-
-using StarportObjects.Structs;
+﻿using StarportObjects.Structs;
 using System.Collections.Generic;
 
 namespace StarportObjects
 {
     public class StarSystem
     {
-        public static readonly uint defensesMax = 60;
+        public static readonly uint MaxDefenses = 60;
 
-        public string name;
+        public string Name {
+            get; set;
+        }
 
-        /// <summary>
-        /// Default Constructor
-        /// </summary>
         public StarSystem()
         {
         }
 
         /// <summary>
-        /// Constructor
+        /// 
         /// </summary>
         /// <param name="name"></param>
         /// <param name="currentDefenses"></param>
         /// <param name="planets"></param>
         /// <param name="port"></param>
-        public StarSystem(string name, uint currentDefenses, List<Planet> planets, Starport port, List<string> connectedSystems,string starType, string starColor, FileObj picture, FileObj map, Coordinate coordinates)
+        /// <param name="connectedSystems"></param>
+        /// <param name="starType"></param>
+        /// <param name="starColor"></param>
+        /// <param name="picture"></param>
+        /// <param name="map"></param>
+        /// <param name="coordinates"></param>
+        public StarSystem(string name, uint currentDefenses, List<Planet> planets, Starport port, List<string> connectedSystems, string starType, string starColor, FileObj picture, FileObj map, Coordinate coordinates)
         {
-            this.name = name;
-            this.currentDefenses = currentDefenses;
-            this.planets = planets;
-            this.port = port;
-            this.connectedSystems = connectedSystems;
-            this.starType = starType;
-            this.starColor = starColor;
-            this.picture = picture;
-            this.MiniMap = MiniMap;
-            this.coordinates = coordinates;
+            Name = name;
+            CurrentDefenses = currentDefenses;
+            Planets = planets;
+            Port = port;
+            ConnectedSystems = connectedSystems;
+            StarType = starType;
+            StarColor = starColor;
+            Picture = picture;
+            MiniMap = map;
+            Coordinates = coordinates;
         }
 
-        public List<string> connectedSystems { get; set; }
-        public uint currentDefenses { get; set; }
-        public List<Planet> planets { get; set; }
-        public Starport port { get; set; }
-        public string starType { get; set; }
-        public string starColor { get; set; }
-        public FileObj picture { get; set; }
-        public FileObj MiniMap { get; set; }
-        public Coordinate coordinates { get; set; }
+        public List<string> ConnectedSystems {
+            get; set;
+        }
+        public uint CurrentDefenses {
+            get; set;
+        }
+        public List<Planet> Planets {
+            get; set;
+        }
+        public Starport Port {
+            get; set;
+        }
+        public string StarType {
+            get; set;
+        }
+        public string StarColor {
+            get; set;
+        }
+        public FileObj Picture {
+            get; set;
+        }
+        public FileObj MiniMap {
+            get; set;
+        }
+        public Coordinate Coordinates {
+            get; set;
+        }
     }
 }

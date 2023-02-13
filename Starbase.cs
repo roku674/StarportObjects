@@ -1,6 +1,4 @@
-﻿//Created by Alexander Fields https://github.com/roku674
-
-namespace StarportObjects
+﻿namespace StarportObjects
 {
     public class Starbase
     {
@@ -13,26 +11,26 @@ namespace StarportObjects
 
         public Starbase(uint colonists, Resources selling, Resources buying, uint shields, uint negotiators)
         {
-            this.colonists = colonists;
-            this.selling = selling;
-            this.buying = buying;
-            this.shields = shields;
-            this.negotiators = negotiators;
+            this.Colonists = colonists;
+            this.Selling = selling;
+            this.Buying = buying;
+            this.Shields = shields;
+            this.Negotiators = negotiators;
         }
 
-        public uint colonists {
+        public uint Colonists {
             get; set;
         }
-        public Resources selling {
+        public Resources Selling {
             get; set;
         }
-        public Resources buying {
+        public Resources Buying {
             get; set;
         }
-        public uint shields {
+        public uint Shields {
             get; set;
         }
-        public uint negotiators {
+        public uint Negotiators {
             get; set;
         }
     }

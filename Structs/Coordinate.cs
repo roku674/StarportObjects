@@ -2,14 +2,14 @@
 {
     public struct Coordinate
     {
-        public int X {
+        public long X {
             get; set;
         }
-        public int Y {
+        public long Y {
             get; set;
         }
 
-        public Coordinate(int x, int y)
+        public Coordinate(long x, long y)
         {
             X = x;
             Y = y;

@@ -17,11 +17,11 @@ namespace StarportObjects
         /// <param name="solarShots"></param>
         public Solar(uint solarRate, uint solarShots)
         {
-            this.solarRate = solarRate;
-            this.solarShots = solarShots;
+            this.SolarRate = solarRate;
+            this.SolarShots = solarShots;
         }
 
-        public uint solarRate { get; set; }
-        public uint solarShots { get; set; }
+        public uint SolarRate { get; set; }
+        public uint SolarShots { get; set; }
     }
 }

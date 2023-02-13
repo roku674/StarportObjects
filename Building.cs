@@ -18,13 +18,13 @@ namespace StarportObjects
         /// <param name="requiredResources"></param>
         public Building(bool isBuilt, string name, Resources requiredResources)
         {
-            this.isBuilt = isBuilt;
-            this.name = name;
-            this.requiredResources = requiredResources;
+            this.IsBuilt = isBuilt;
+            this.Name = name;
+            this.RequiredResources = requiredResources;
         }
 
-        public bool isBuilt { get; set; }
-        public string name { get; set; }
-        public Resources requiredResources { get; set; }
+        public bool IsBuilt { get; set; }
+        public string Name { get; set; }
+        public Resources RequiredResources { get; set; }
     }
 }

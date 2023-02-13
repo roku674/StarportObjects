@@ -1,4 +1,5 @@
-﻿
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
 using System.IO;
 
 namespace StarportObjects
@@ -18,32 +19,62 @@ namespace StarportObjects
         /// <param name="fileBytes"></param>
         /// <param name="createdDate"></param>
         /// <param name="lastUpdated"></param>
-        /// <param name="fileSize">file size is in bytes just in case you're wondering</param>
+        /// <param name="fileSize">File size is in bytes just in case you're wondering</param>
         public FileObj(string fileName, string fileExtension, string fileContents, byte[] fileBytes, System.DateTime createdDate, System.DateTime lastUpdated, ulong fileSize, string folderStructure, DirectoryInfo directory)
         {
-            this.fileName = fileName;
-            this.fileExtension = fileExtension;
-            this.fileContents = fileContents;
-            this.fileBytes = fileBytes;
-            this.createdDate = createdDate;
-            this.lastUpdated = lastUpdated;
-            this.fileSize = fileSize;
-            this.folderStructure = folderStructure;
-            this.directory = directory;
+            FileName = fileName;
+            FileExtension = fileExtension;
+            FileContents = fileContents;
+            FileBytes = fileBytes;
+            CreatedDate = createdDate;
+            LastUpdated = lastUpdated;
+            FileSize = fileSize;
+            FolderStructure = folderStructure;
+            Directory = directory;
         }
 
-        string fileName { get; set; }
-        string fileExtension { get; set; }
-        string fileContents { get; set; }
-        byte[] fileBytes { get; set; }
-        System.DateTime createdDate { get; set; }
-        System.DateTime lastUpdated { get; set; }
-        /// <summary>
-        /// File size is in bytes just in casee you're wondering
-        /// </summary>
-        ulong fileSize { get; set; }
-        string folderStructure { get; set; }
-        DirectoryInfo directory { get; set; }
+        [BsonId]
+        public ObjectId Id {
+            get; set;
+        }
 
+        public string FileName {
+            get; set;
+        }
+
+        public string FileExtension {
+            get; set;
+        }
+
+        public string FileContents {
+            get; set;
+        }
+
+        public byte[] FileBytes {
+            get; set;
+        }
+
+        public System.DateTime CreatedDate {
+            get; set;
+        }
+
+        public System.DateTime LastUpdated {
+            get; set;
+        }
+
+        /// <summary>
+        /// File size is in bytes just in case you're wondering
+        /// </summary>
+        public ulong FileSize {
+            get; set;
+        }
+
+        public string FolderStructure {
+            get; set;
+        }
+
+        public DirectoryInfo Directory {
+            get; set;
+        }
     }
 }

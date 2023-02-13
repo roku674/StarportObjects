@@ -22,21 +22,21 @@ namespace StarportObjects
         /// <param name="shields"></param>
         public WeaponsFactory(uint nukes, uint negotiators, uint mines, uint compoundMines, uint flakCannons, uint laserCannons, uint shields)
         {
-            this.nukes = nukes;
-            this.negotiators = negotiators;
-            this.mines = mines;
-            this.compoundMines = compoundMines;
-            this.flakCannons = flakCannons;
-            this.laserCannons = laserCannons;
-            this.shields = shields;
+            this.Nukes = nukes;
+            this.Negotiators = negotiators;
+            this.Mines = mines;
+            this.CompoundMines = compoundMines;
+            this.FlakCannons = flakCannons;
+            this.LaserCannons = laserCannons;
+            this.Shields = shields;
         }
 
-        public uint nukes { get; set; }
-        public uint negotiators { get; set; }
-        public uint mines { get; set; }
-        public uint compoundMines { get; set; }
-        public uint flakCannons { get; set; }
-        public uint laserCannons { get; set; }
-        public uint shields { get; set; }
+        public uint Nukes { get; set; }
+        public uint Negotiators { get; set; }
+        public uint Mines { get; set; }
+        public uint CompoundMines { get; set; }
+        public uint FlakCannons { get; set; }
+        public uint LaserCannons { get; set; }
+        public uint Shields { get; set; }
     }
 }

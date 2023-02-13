@@ -8,21 +8,32 @@ namespace StarportObjects
         /// Default constructor
         /// </summary>
         public Starport()
-        { }
+        {
+        }
 
         public Starport(uint colonists, Resources selling, Resources buying, uint shields, uint negotiators)
         {
-            this.colonists = colonists;
-            this.selling = selling;
-            this.buying = buying;
-            this.shields = shields;
-            this.negotiators = negotiators;
+            this.Colonists = colonists;
+            this.Selling = selling;
+            this.Buying = buying;
+            this.Shields = shields;
+            this.Negotiators = negotiators;
         }
 
-        public uint colonists { get; set; }
-        public Resources selling { get; set; }
-        public Resources buying { get; set;}
-        public uint shields { get; set; }
-        public uint negotiators { get; set; }
+        public uint Colonists {
+            get; set;
+        }
+        public Resources Selling {
+            get; set;
+        }
+        public Resources Buying {
+            get; set;
+        }
+        public uint Shields {
+            get; set;
+        }
+        public uint Negotiators {
+            get; set;
+        }
     }
 }

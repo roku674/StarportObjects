@@ -25,27 +25,27 @@ namespace StarportObjects
         /// <param name="isDoubleDome"></param>
         public Planet(string name, string owner, string population, string morale, uint currentDefenses, Holding holding, bool isColonized, bool isDoubleDome,FileObj picture, FileObj map)
         {
-            this.name = name;
-            this.owner = owner;
-            this.population = population;
-            this.morale = morale;
-            this.currentDefenses = currentDefenses;
-            this.holding = holding;
-            this.isColonized = isColonized;
-            this.isDoubleDome = isDoubleDome;
-            this.picture = picture;
-            this.map = map;
+            this.Name = name;
+            this.Owner = owner;
+            this.Population = population;
+            this.Morale = morale;
+            this.CurrentDefenses = currentDefenses;
+            this.Holding = holding;
+            this.IsColonized = isColonized;
+            this.IsDoubleDome = isDoubleDome;
+            this.Picture = picture;
+            this.Map = map;
         }
 
-        public Holding holding { get; set; }
-        public uint currentDefenses { get; set; }
-        public bool isColonized { get; set; }
-        public bool isDoubleDome { get; set; }
-        public string morale { get; set; }
-        public string name { get; set; }
-        public string owner { get; set; }
-        public string population { get; set; }
-        public FileObj picture { get; set; }
-        public FileObj map { get; set; }
+        public Holding Holding { get; set; }
+        public uint CurrentDefenses { get; set; }
+        public bool IsColonized { get; set; }
+        public bool IsDoubleDome { get; set; }
+        public string Morale { get; set; }
+        public string Name { get; set; }
+        public string Owner { get; set; }
+        public string Population { get; set; }
+        public FileObj Picture { get; set; }
+        public FileObj Map { get; set; }
     }
 }
