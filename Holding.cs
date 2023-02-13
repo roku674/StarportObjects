@@ -63,7 +63,7 @@ namespace StarportObjects
         /// <param name="discoveries"></param>
         /// <param name="environment"></param>
         public Holding(string planetType, int hopsAway, string name, string location, int galaxyX, int galaxyY, string owner,
-            string corporation, string founded, int population, double popGrowth, double morale, double moraleChange, string governemnt,
+            string corporation, string founded, uint population, double popGrowth, double morale, double moraleChange, string governemnt,
             int credits, double credGrowth, int pollution, double pollutionRate, int disaster, double unProtect, int percConstruct,
             int percResearch, int percMilitary, int percHarvest, string currentlyBuilding, int buildMinutes, int ore, int ana, int med,
             int org, int oil, int ura, int equ, int spi, int nukes, int negotiators, int mines, int compoundMines, int flakCannons,
@@ -182,7 +182,7 @@ namespace StarportObjects
         /// <summary>
         /// Population of the holding
         /// </summary>
-        public int Population {
+        public double Population {
             get; set;
         }
 

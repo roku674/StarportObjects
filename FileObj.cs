@@ -20,7 +20,7 @@ namespace StarportObjects
         /// <param name="createdDate"></param>
         /// <param name="lastUpdated"></param>
         /// <param name="fileSize">File size is in bytes just in case you're wondering</param>
-        public FileObj(string fileName, string fileExtension, string fileContents, byte[] fileBytes, System.DateTime createdDate, System.DateTime lastUpdated, ulong fileSize, string folderStructure, DirectoryInfo directory)
+        public FileObj(string fileName, string fileExtension, string fileContents, byte[] fileBytes, System.DateTime createdDate, System.DateTime lastUpdated, long fileSize, string folderStructure, DirectoryInfo directory)
         {
             FileName = fileName;
             FileExtension = fileExtension;
@@ -65,7 +65,7 @@ namespace StarportObjects
         /// <summary>
         /// File size is in bytes just in case you're wondering
         /// </summary>
-        public ulong FileSize {
+        public long FileSize {
             get; set;
         }
 
