@@ -1,5 +1,9 @@
 ﻿//Created by Alexander Fields https://github.com/roku674
 
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
+using System.Collections.Generic;
+
 namespace StarportObjects
 {
     /// <summary>
@@ -116,6 +120,12 @@ namespace StarportObjects
             this.Discoveries = discoveries;
             this.Environment = environment;
         }
+
+        [BsonId]
+        public ObjectId Id {
+            get; set;
+        }
+
         /// <summary>
         /// Planet type
         /// </summary>
@@ -432,6 +442,18 @@ namespace StarportObjects
         /// </summary>
         public bool Environment {
             get; set;
+        }
+    }
+    public class HoldingComparer : IEqualityComparer<Holding>
+    {
+        public bool Equals(Holding x, Holding y)
+        {
+            return x.Location == y.Location;
+        }
+
+        public int GetHashCode(Holding obj)
+        {
+            return obj.Location.GetHashCode();
         }
     }
 }

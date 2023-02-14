@@ -1,12 +1,18 @@
-﻿namespace StarportObjects.Structs
+﻿namespace StarportObjects
 {
-    public struct Coordinate
+    public class Coordinate
     {
-        public long X {
+        public long X
+        {
             get; set;
         }
-        public long Y {
+        public long Y
+        {
             get; set;
+        }
+
+        public Coordinate()
+        {
         }
 
         public Coordinate(long x, long y)
@@ -14,6 +20,7 @@
             X = x;
             Y = y;
         }
+
 
         public string GetAsString()
         {

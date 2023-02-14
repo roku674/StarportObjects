@@ -1,4 +1,5 @@
-﻿using StarportObjects.Structs;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using MongoDB.Bson;
 using System.Collections.Generic;
 
 namespace StarportObjects
@@ -40,6 +41,11 @@ namespace StarportObjects
             Picture = picture;
             MiniMap = map;
             Coordinates = coordinates;
+        }
+
+        [BsonId]
+        public ObjectId Id {
+            get; set;
         }
 
         public List<string> ConnectedSystems {
