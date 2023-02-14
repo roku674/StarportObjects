@@ -75,5 +75,20 @@ namespace StarportObjects
         public Coordinate Coordinates {
             get; set;
         }
+
+        public string GetSystemNameFromPlanet(Planet planet)
+        {
+            string location = planet.Name;
+            string[] split = planet.Name.Split(" ");
+
+            location = "";
+
+            for (int i = 0;i < split.Length - 1;i++)
+            {
+                location += split[i] + " ";
+            }
+            location = location.Trim();
+            return location;
+        }
     }
 }
