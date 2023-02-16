@@ -15,29 +15,41 @@ namespace StarportObjects
         /// <summary>
         /// Constructor
         /// </summary>
+        /// <param name="holding"></param>
+        /// <param name="planetWeight"></param>
+        /// <param name="currentDefenses"></param>
+        /// <param name="isColonized"></param>
+        /// <param name="isDoubleDome"></param>
+        /// <param name="morale"></param>
         /// <param name="name"></param>
         /// <param name="owner"></param>
         /// <param name="population"></param>
-        /// <param name="morale"></param>
-        /// <param name="currentDefenses"></param>
-        /// <param name="holding"></param>
-        /// <param name="isColonized"></param>
-        /// <param name="isDoubleDome"></param>
-        public Planet(string name, string owner, string population, string morale, uint currentDefenses, Holding holding, bool isColonized, bool isDoubleDome,FileObj picture, FileObj map)
+        /// <param name="picture"></param>
+        /// <param name="map"></param>
+        public Planet(Holding holding, uint planetWeight, uint currentDefenses, bool isColonized, bool isDoubleDome, string morale, string name, string owner, string population, FileObj picture, FileObj map)
         {
-            this.Name = name;
-            this.Owner = owner;
-            this.Population = population;
-            this.Morale = morale;
-            this.CurrentDefenses = currentDefenses;
-            this.Holding = holding;
-            this.IsColonized = isColonized;
-            this.IsDoubleDome = isDoubleDome;
-            this.Picture = picture;
-            this.Map = map;
+            Holding = holding;
+            PlanetWeight = planetWeight;
+            if (currentDefenses > defensesMax)
+            {
+                CurrentDefenses = 125;
+            }
+            else
+            {
+                CurrentDefenses = currentDefenses;
+            }
+            IsColonized = isColonized;
+            IsDoubleDome = isDoubleDome;
+            Morale = morale;
+            Name = name;
+            Owner = owner;
+            Population = population;
+            Picture = picture;
+            Map = map;
         }
 
         public Holding Holding { get; set; }
+        public uint PlanetWeight { get; set; }
         public uint CurrentDefenses { get; set; }
         public bool IsColonized { get; set; }
         public bool IsDoubleDome { get; set; }
