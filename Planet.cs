@@ -1,5 +1,7 @@
 ﻿//Created by Alexander Fields https://github.com/roku674
 
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace StarportObjects
 {
     public class Planet
@@ -54,6 +56,7 @@ namespace StarportObjects
         public bool IsColonized { get; set; }
         public bool IsDoubleDome { get; set; }
         public string Morale { get; set; }
+        [BsonId]
         public string Name { get; set; }
         public string Owner { get; set; }
         public string Population { get; set; }

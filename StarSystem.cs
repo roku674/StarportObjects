@@ -8,6 +8,7 @@ namespace StarportObjects
     {
         public static readonly uint MaxDefenses = 60;
 
+        [BsonId]
         public string Name {
             get; set;
         }
@@ -41,12 +42,7 @@ namespace StarportObjects
             Picture = picture;
             MiniMap = map;
             Coordinates = coordinates;
-        }
-
-        [BsonId]
-        public ObjectId Id {
-            get; set;
-        }
+        }     
 
         public List<string> ConnectedSystems {
             get; set;

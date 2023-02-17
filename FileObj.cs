@@ -34,10 +34,6 @@ namespace StarportObjects
         }
 
         [BsonId]
-        public ObjectId Id {
-            get; set;
-        }
-
         public string FileName {
             get; set;
         }

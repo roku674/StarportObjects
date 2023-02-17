@@ -121,11 +121,6 @@ namespace StarportObjects
             this.Environment = environment;
         }
 
-        [BsonId]
-        public ObjectId Id {
-            get; set;
-        }
-
         /// <summary>
         /// Planet type
         /// </summary>
@@ -147,6 +142,7 @@ namespace StarportObjects
             get; set;
         }
 
+        [BsonId]
         /// <summary>
         /// Location of the holding
         /// </summary>
