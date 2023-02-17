@@ -90,5 +90,19 @@ namespace StarportObjects
             location = location.Trim();
             return location;
         }
+        public static string GetSystemNameFromPlanet(string planetName)
+        {
+            string location = planetName;
+            string[] split = planetName.Split(" ");
+
+            location = "";
+
+            for (int i = 0;i < split.Length - 1;i++)
+            {
+                location += split[i] + " ";
+            }
+            location = location.Trim();
+            return location;
+        }
     }
 }
