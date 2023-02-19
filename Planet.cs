@@ -28,7 +28,7 @@ namespace StarportObjects
         /// <param name="population"></param>
         /// <param name="picture"></param>
         /// <param name="map"></param>
-        public Planet(Holding holding, uint planetWeight, uint currentDefenses, bool isColonized, bool isDoubleDome, string morale, string name, string owner, string population, FileObj picture, FileObj map)
+        public Planet(Holding holding, uint planetWeight, uint currentDefenses, bool isColonized, bool isDoubleDome, string morale, string name, string owner,string planetType, string population, FileObj picture, FileObj map)
         {
             Holding = holding;
             PlanetWeight = planetWeight;
@@ -45,6 +45,7 @@ namespace StarportObjects
             Morale = morale;
             Name = name;
             Owner = owner;
+            PlanetType = planetType;
             Population = population;
             Picture = picture;
             Map = map;
@@ -59,6 +60,7 @@ namespace StarportObjects
         [BsonId]
         public string Name { get; set; }
         public string Owner { get; set; }
+        public string PlanetType { get;set;}
         public string Population { get; set; }
         public FileObj Picture { get; set; }
         public FileObj Map { get; set; }
