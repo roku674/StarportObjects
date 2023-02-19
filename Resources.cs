@@ -2,6 +2,8 @@
 {
     public class Resources
     {
+        public static readonly Resources requiredResourcesForBuilds = new Resources(3000, 1600, 900, 1600, 2100, 1800, 2400, 1300);
+
         /// <summary>
         /// Constructor
         /// </summary>
