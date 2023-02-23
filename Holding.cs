@@ -33,7 +33,7 @@ namespace StarportObjects
         /// <param name="popGrowth"></param>
         /// <param name="morale"></param>
         /// <param name="moraleChange"></param>
-        /// <param name="governemnt"></param>
+        /// <param name="government"></param>
         /// <param name="credits"></param>
         /// <param name="credGrowth"></param>
         /// <param name="pollution"></param>
@@ -66,60 +66,56 @@ namespace StarportObjects
         /// <param name="numDiscoveries"></param>
         /// <param name="discoveries"></param>
         /// <param name="environment"></param>
-        public Holding(string planetType, int hopsAway, string name, string location, int galaxyX, int galaxyY, string owner,
-            string corporation, string founded, uint population, double popGrowth, double morale, double moraleChange, string governemnt,
-            int credits, double credGrowth, int pollution, double pollutionRate, int disaster, double unProtect, int percConstruct,
-            int percResearch, int percMilitary, int percHarvest, string currentlyBuilding, int buildMinutes, int ore, int ana, int med,
-            int org, int oil, int ura, int equ, int spi, int nukes, int negotiators, int mines, int compoundMines, int flakCannons,
-            int laserCannons, int shields, int solarShots, int solarFreq, int numDiscoveries, string discoveries, bool environment)
+        public Holding(string planetType, int hopsAway, string name, string location, int galaxyX, int galaxyY, string owner, string corporation, string founded, double population, double popGrowth, double morale, double moraleChange, string government, int credits, double credGrowth, int pollution, double pollutionRate, int disaster, double unProtect, int percConstruct, int percResearch, int percMilitary, int percHarvest, string currentlyBuilding, int buildMinutes, int ore, int ana, int med, int org, int oil, int ura, int equ, int spi, int nukes, int negotiators, int mines, int compoundMines, int flakCannons, int laserCannons, int shields, int solarShots, int solarFreq, int numDiscoveries, string discoveries, bool environment)
         {
-            this.PlanetType = planetType;
-            this.HopsAway = hopsAway;
-            this.Name = name;
-            this.Location = location;
-            this.GalaxyX = galaxyX;
-            this.GalaxyY = galaxyY;
-            this.Owner = owner;
-            this.Corporation = corporation;
-            this.Founded = founded;
-            this.Population = population;
-            this.PopGrowth = popGrowth;
-            this.Morale = morale;
-            this.MoraleChange = moraleChange;
-            this.Government = governemnt;
-            this.Credits = credits;
-            this.CredGrowth = credGrowth;
-            this.Pollution = pollution;
-            this.PollutionRate = pollutionRate;
-            this.Disaster = disaster;
-            this.UnProtect = unProtect;
-            this.PercConstruct = percConstruct;
-            this.PercResearch = percResearch;
-            this.PercMilitary = percMilitary;
-            this.PercHarvest = percHarvest;
-            this.CurrentlyBuilding = currentlyBuilding;
-            this.BuildMinutes = buildMinutes;
-            this.Ore = ore;
-            this.Ana = ana;
-            this.Med = med;
-            this.Org = org;
-            this.Oil = oil;
-            this.Ura = ura;
-            this.Equ = equ;
-            this.Spi = spi;
-            this.Nukes = nukes;
-            this.Negotiators = negotiators;
-            this.Mines = mines;
-            this.CompoundMines = compoundMines;
-            this.FlakCannons = flakCannons;
-            this.LaserCannons = laserCannons;
-            this.Shields = shields;
-            this.SolarShots = solarShots;
-            this.SolarFreq = solarFreq;
-            this.NumDiscoveries = numDiscoveries;
-            this.Discoveries = discoveries;
-            this.Environment = environment;
+            PlanetType = planetType;
+            HopsAway = hopsAway;
+            Name = name;
+            Location = location;
+            GalaxyX = galaxyX;
+            GalaxyY = galaxyY;
+            Owner = owner;
+            Corporation = corporation;
+            Founded = founded;
+            Population = population;
+            PopGrowth = popGrowth;
+            Morale = morale;
+            MoraleChange = moraleChange;
+            Government = government;
+            Credits = credits;
+            CredGrowth = credGrowth;
+            Pollution = pollution;
+            PollutionRate = pollutionRate;
+            Disaster = disaster;
+            UnProtect = unProtect;
+            PercConstruct = percConstruct;
+            PercResearch = percResearch;
+            PercMilitary = percMilitary;
+            PercHarvest = percHarvest;
+            CurrentlyBuilding = currentlyBuilding;
+            BuildMinutes = buildMinutes;
+            Ore = ore;
+            Ana = ana;
+            Med = med;
+            Org = org;
+            Oil = oil;
+            Ura = ura;
+            Equ = equ;
+            Spi = spi;
+            Nukes = nukes;
+            Negotiators = negotiators;
+            Mines = mines;
+            CompoundMines = compoundMines;
+            FlakCannons = flakCannons;
+            LaserCannons = laserCannons;
+            Shields = shields;
+            SolarShots = solarShots;
+            SolarFreq = solarFreq;
+            NumDiscoveries = numDiscoveries;
+            Discoveries = discoveries;
+            Environment = environment;
         }
+
 
         /// <summary>
         /// Planet type
@@ -411,20 +407,20 @@ namespace StarportObjects
         /// <summary>
         /// The amount of Solar Shots
         /// </summary>
-        public int SolarShots {
+        public int Solarshots {
             get; set;
         }
 
         /// <summary>
         /// The frequency of Solar Shots
         /// </summary>
-        public int SolarFreq{
+        public int Solarfreq{
             get;set;
         }
         /// <summary>
         /// Amount of discoveries
         /// </summary>
-        public int NumDiscoveries {
+        public int NumDiscovs {
             get; set;
         }
         /// <summary>
