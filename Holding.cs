@@ -85,7 +85,7 @@ namespace StarportObjects
             Credits = credits;
             CredGrowth = credGrowth;
             Pollution = pollution;
-            PollutionRate = pollutionRate;
+            PolluteRate = pollutionRate;
             Disasters = disaster;
             UNProtect = unProtect;
             PercConstruct = percConstruct;
@@ -240,7 +240,7 @@ namespace StarportObjects
         /// <summary>
         /// Pollution rate
         /// </summary>
-        public double PollutionRate {
+        public double PolluteRate {
             get; set;
         }
 
