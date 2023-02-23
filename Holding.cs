@@ -86,8 +86,8 @@ namespace StarportObjects
             CredGrowth = credGrowth;
             Pollution = pollution;
             PollutionRate = pollutionRate;
-            Disaster = disaster;
-            UnProtect = unProtect;
+            Disasters = disaster;
+            UNProtect = unProtect;
             PercConstruct = percConstruct;
             PercResearch = percResearch;
             PercMilitary = percMilitary;
@@ -109,9 +109,9 @@ namespace StarportObjects
             FlakCannons = flakCannons;
             LaserCannons = laserCannons;
             Shields = shields;
-            SolarShots = solarShots;
-            SolarFreq = solarFreq;
-            NumDiscoveries = numDiscoveries;
+            Solarshots = solarShots;
+            Solarfreq = solarFreq;
+            NumDiscovs = numDiscoveries;
             Discoveries = discoveries;
             Environment = environment;
         }
@@ -247,14 +247,14 @@ namespace StarportObjects
         /// <summary>
         /// Disaster level of the holding
         /// </summary>
-        public int Disaster {
+        public int Disasters {
             get; set;
         }
 
         /// <summary>
         /// Unprotected level of the holding
         /// </summary>
-        public double UnProtect {
+        public double UNProtect {
             get; set;
         }
 
