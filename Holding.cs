@@ -92,7 +92,7 @@ namespace StarportObjects
             PercResearch = percResearch;
             PercMilitary = percMilitary;
             PercHarvest = percHarvest;
-            CurrentlyBuilding = currentlyBuilding;
+            CurrentBuild = currentlyBuilding;
             BuildMinutes = buildMinutes;
             Ore = ore;
             Ana = ana;
@@ -288,7 +288,7 @@ namespace StarportObjects
         /// <summary>
         /// The building currently being constructed
         /// </summary>
-        public string CurrentlyBuilding {
+        public string CurrentBuild {
             get; set;
         }
 
