@@ -56,6 +56,7 @@ namespace StarportObjects
         public uint CurrentDefenses { get; set; }
         public bool IsColonized { get; set; }
         public bool IsDoubleDome { get; set; }
+        public bool AlertOnLand{ get; set;}
         public string Morale { get; set; }
         [BsonId]
         public string Name { get; set; }
